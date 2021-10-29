@@ -2,4 +2,8 @@
     <string name="app_name">Order Tracking - Exercise</string>
     <string name="track_order">Track Order</string>
     <string name="cancel">CANCEL</string>
+    <string name="estimated_time">ESTIMATED TIME</string>
+    <string name="order_number">ORDER NUMBER</string>
+    <string name="_30_minutes">30 Minutes</string>
+    <string name="order_number_value">#C862966</string>
 </resources>

@@ -11,4 +11,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="colorSemiDark">#40000000</color>
+    <color name="colorDivider">#E9E9E9</color>
+    <color name="colorLabelBackground">#99F2F2F2</color>
 </resources>

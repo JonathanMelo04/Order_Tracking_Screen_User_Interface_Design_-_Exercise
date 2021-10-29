@@ -52,4 +52,81 @@
         android:background="@drawable/drop_shadow"
         app:layout_constraintTop_toBottomOf="@id/layoutToolbar"/>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorLabelBackground"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolbar"
+        app:layout_constraintBottom_toTopOf="@id/viewDivider"/>
+
+    <TextView
+        android:id="@+id/textEstimatedTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/estimated_time"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textColor="@color/cinza"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@id/textOrderNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolbar"/>
+
+    <TextView
+        android:id="@+id/textOrderNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/order_number"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textColor="@color/cinza"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textEstimatedTime"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolbar"/>
+
+    <TextView
+        android:id="@+id/textTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="@string/_30_minutes"
+        android:gravity="center"
+        android:textColor="@color/pretoFosco"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/textEstimatedTime"
+        app:layout_constraintStart_toStartOf="@id/textEstimatedTime"
+        app:layout_constraintTop_toBottomOf="@id/textEstimatedTime"/>
+
+    <TextView
+        android:id="@+id/textOrder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="@string/order_number_value"
+        android:gravity="center"
+        android:textColor="@color/pretoFosco"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/textOrderNumber"
+        app:layout_constraintStart_toStartOf="@id/textOrderNumber"
+        app:layout_constraintTop_toBottomOf="@id/textOrderNumber"/>
+
+    <View
+        android:id="@+id/viewDivider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorDivider"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/textTime"/>
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
