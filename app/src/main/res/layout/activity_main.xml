@@ -235,4 +235,80 @@
         app:layout_constraintEnd_toEndOf="@id/textOrderConfirmed"
         app:layout_constraintStart_toStartOf="@id/textOrderConfirmed"/>
 
+    <View
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/verdeClaro"
+        app:layout_constraintBottom_toTopOf="@+id/viewOrderConfirmed"
+        app:layout_constraintEnd_toEndOf="@id/viewOrderPlaced"
+        app:layout_constraintStart_toStartOf="@id/viewOrderPlaced"
+        app:layout_constraintTop_toBottomOf="@+id/viewOrderPlaced"/>
+
+    <View
+        android:id="@+id/viewOrderProcessed"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/shape_status_current"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageOrderProcessed"
+        app:layout_constraintBottom_toBottomOf="@+id/imageOrderProcessed"/>
+
+    <ImageView
+        android:id="@+id/imageOrderProcessed"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/processed"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/imageOrderConfirmed"
+        app:layout_constraintStart_toEndOf="@id/viewOrderProcessed"/>
+
+    <View
+        android:id="@+id/viewProcessedSupporter"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        app:layout_constraintStart_toStartOf="@id/imageOrderProcessed"
+        app:layout_constraintEnd_toEndOf="@id/imageOrderProcessed"
+        app:layout_constraintTop_toTopOf="@+id/imageOrderProcessed"
+        app:layout_constraintBottom_toBottomOf="@+id/imageOrderProcessed"/>
+
+    <TextView
+        android:id="@+id/textOrderProcessed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/order_processed"
+        android:textColor="@color/pretoFosco"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/viewProcessedSupporter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageOrderProcessed"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/we_are_preparing_your_order"
+        android:textColor="@color/colorRemaining"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/viewProcessedSupporter"
+        app:layout_constraintEnd_toEndOf="@id/textOrderProcessed"
+        app:layout_constraintStart_toStartOf="@id/textOrderProcessed"/>
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/verdeClaro"
+        app:layout_constraintBottom_toTopOf="@+id/viewOrderProcessed"
+        app:layout_constraintEnd_toEndOf="@id/viewOrderConfirmed"
+        app:layout_constraintStart_toStartOf="@id/viewOrderConfirmed"
+        app:layout_constraintTop_toBottomOf="@+id/viewOrderConfirmed"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
